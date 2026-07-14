@@ -521,7 +521,7 @@ const SuccessModal = ({ user, onNavigate }) => (
         </div>
         {/* Heading */}
         <h1 className="mt-5 text-4xl font-extrabold bg-gradient-to-r from-pink-300 via-yellow-200 to-indigo-200 bg-clip-text text-transparent animate-pulse">
-          Login Successful Click Dashboard!!!
+          Login Successfully
         </h1>
 
         <h2 className="mt-2 text-2xl font-bold text-white">
