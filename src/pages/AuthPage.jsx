@@ -526,7 +526,7 @@ const SuccessModal = ({ user, onNavigate }) => (
 
         <h2 className="mt-2 text-2xl font-bold text-white">
           {user?.displayName
-            ? `${user.displayName.split(" ")[0]}, Welcome Aboard 🎂`
+            ? `${user.displayName.split(" ")[0]}, Welcome Aboard 🚀`
             : "Welcome Champion 🎂"}
         </h2>
 
@@ -542,11 +542,11 @@ const SuccessModal = ({ user, onNavigate }) => (
 
         {/* Party Icons */}
         <div className="flex justify-center gap-4 text-3xl mt-6 animate-bounce">
+          <span></span>
+          <span></span>
           <span>🎊</span>
-          <span>🎉</span>
-          <span>🎁</span>
-          <span>🍰</span>
-          <span>🥳</span>
+          <span></span>
+          <span></span>
         </div>
 
         {/* CTA Button */}
@@ -666,6 +666,7 @@ export default function AuthPage(collapsed) {
       );
       onSuccess(r.user);
     } catch (e) {
+      
       toast(
         e.code === "auth/popup-closed-by-user"
           ? "Sign-in cancelled"
